@@ -1,73 +1,100 @@
-# EchoCap
-
-## 📝 Description
+EchoCap
+📝 Description
 A web application that records high-quality audio from your screen sharing session. This tool is useful for capturing system audio during presentations, tutorials, or any screen recording scenario where you need pristine audio quality.
 
-## ✨ Features
-- Records audio at 48kHz sample rate (higher than standard 44.1kHz)
-- Uses Opus codec with 192kbps bitrate for excellent quality
-- Simple one-click recording and saving
-- Lightweight and runs entirely in the browser
-- No server required - all processing happens locally
+✨ Features
+Records audio at 48kHz sample rate (higher than standard 44.1kHz)
 
-## 🛠️ Technologies Used
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Web APIs:
-  - MediaRecorder API
-  - getDisplayMedia()
-  - Blob API
+Uses Opus codec with 192kbps bitrate for excellent quality
 
-## 🚀 How to Use
-1. Open the application in a modern browser (Chrome, Edge, Firefox recommended)
-2. Click "Start Recording"
-3. Select the screen/window/tab you want to share (make sure to check "Share audio" option)
-4. Perform your screen activity with audio
-5. Click "Stop Recording" when finished
-6. The audio will automatically download as `screen-audio.webm`
+Simple one-click recording and saving
 
-## ⚙️ Technical Specifications
-- Audio Format: WebM container with Opus codec
-- Sample Rate: 48,000 Hz
-- Bitrate: 192 kbps
-- Echo Cancellation: Disabled (for pure audio capture)
-- Noise Suppression: Disabled (for unprocessed audio)
+Lightweight and runs entirely in the browser
 
-## 🌟 Why This Recorder?
-- **Higher Quality**: Better than standard browser recording settings
-- **No Middleware**: Doesn't require additional software or plugins
-- **Privacy Focused**: All processing happens in your browser
-- **Lightweight**: Minimal resource usage
+No server required - all processing happens locally
 
-## 📁 File Structure
-```
+🛠️ Technologies Used
+HTML5
+
+CSS3
+
+JavaScript (ES6+)
+
+Web APIs:
+
+MediaRecorder API
+
+getDisplayMedia()
+
+Blob API
+
+🚀 How to Use
+Open the application in a modern browser (Chrome, Edge, Firefox recommended)
+
+Click "Start Recording"
+
+Select the screen/window/tab you want to share (make sure to check "Share audio" option)
+
+Perform your screen activity with audio
+
+Click "Stop Recording" when finished
+
+The audio will automatically download as screen-audio.webm
+
+⚙️ Technical Specifications
+Audio Format: WebM container with Opus codec
+
+Sample Rate: 48,000 Hz
+
+Bitrate: 192 kbps
+
+Echo Cancellation: Disabled (for pure audio capture)
+
+Noise Suppression: Disabled (for unprocessed audio)
+
+🌟 Why This Recorder?
+Higher Quality: Better than standard browser recording settings
+
+No Middleware: Doesn't require additional software or plugins
+
+Privacy Focused: All processing happens in your browser
+
+Lightweight: Minimal resource usage
+
+📁 File Structure
+text
 screen-audio-recorder/
 ├── index.html          # Main application file
 └── README.md           # This documentation
-```
-
-## 🧑‍💻 Development
+🧑‍💻 Development
 To modify or extend this project:
 
-1. Clone or download the repository
-2. Open `index.html` in a code editor
-3. Make your changes
-4. Test in browser
+Clone or download the repository
 
-### Customization Options:
-- Change audio settings in the `getDisplayMedia` options
-- Modify the output format by changing the `mimeType`
-- Adjust the bitrate via `audioBitsPerSecond`
-- Customize the UI in the `<style>` section
+Open index.html in a code editor
 
-## ⚠️ Limitations
-- Requires browser support for MediaRecorder API
-- Some browsers may limit audio capture from certain sources
-- Chrome requires HTTPS for getDisplayMedia() to work
+Make your changes
 
-## 📜 License
+Test in browser
+
+Customization Options:
+Change audio settings in the getDisplayMedia options
+
+Modify the output format by changing the mimeType
+
+Adjust the bitrate via audioBitsPerSecond
+
+Customize the UI in the <style> section
+
+⚠️ Limitations
+Requires browser support for MediaRecorder API
+
+Some browsers may limit audio capture from certain sources
+
+Chrome requires HTTPS for getDisplayMedia() to work
+
+📜 License
 This project is open-source and available for anyone to use or modify.
 
-## 🙏 Credits
+🙏 Credits
 Developed with the Web Media APIs and modern JavaScript.

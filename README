@@ -1,98 +1,50 @@
 # 🎙️ EchoCap
 
-*Record and Save your favourite tracks*
+EchoCap is a simple web application that allows you to **record audio from your screen** and save your favorite tracks. Perfect for capturing sounds from presentations, videos, or any media playing on your screen.
 
-EchoCap is a simple, browser-based audio recording application that captures system audio from your screen. Perfect for recording music, podcasts, or any audio playing on your computer.
+---
 
-## ✨ Features
+## Features
 
-- **System Audio Recording**: Captures audio from your screen/display
-- **High Quality**: Records at 48kHz sample rate with 192kbps bitrate
-- **Instant Download**: Automatically downloads recordings as WebM files
-- **Clean Interface**: Simple, user-friendly design
-- **Browser-Based**: No installation required - runs directly in your web browser
+- Record audio directly from your screen
+- Save recordings as `.webm` files
+- Simple and minimalistic interface
+- No installation required — works in modern browsers
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
+## Screenshots
 
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Microphone/audio permissions
+### Recording Interface
+![Recording Interface](screenshots/main-interface.png)
 
-### Installation
+---
 
-1. Clone or download this repository
-2. Open `index.html` in your web browser
-3. Grant screen sharing permissions when prompted
+## How to Use
 
-### Usage
+1. Open `index.html` in a modern browser (Chrome, Edge, or Firefox recommended).
+2. Click **Start Recording** to capture audio from your screen.
+3. Click **Stop Recording** to save the recording as a `.webm` file.
+4. The downloaded file will be named `recording.webm`.
 
-1. Click **"Start Recording"** to begin
-2. Select the screen/application you want to record audio from
-3. The app will capture the audio from your selected source
-4. Click **"Stop Recording"** when finished
-5. Your recording will automatically download as `recording.webm`
+---
 
-## 📁 Project Structure
+## Files
 
-```
-echocap/
-├── index.html      # Main HTML file
-├── style.css       # Styling
-├── script.js       # Recording functionality
-└── README.md       # This file
-```
+- `index.html` – Main HTML file
+- `style.css` – Styles for the app
+- `script.js` – JavaScript logic for recording
 
-## 🔧 Technical Details
+---
 
-- **Audio Format**: WebM with Opus codec
-- **Sample Rate**: 48,000 Hz
-- **Bitrate**: 192 kbps
-- **Audio Processing**: Echo cancellation and noise suppression disabled for pure audio capture
+## Notes
 
-## 🎯 Use Cases
+- Your browser may prompt for permission to capture the screen and audio.
+- Ensure the media you want to record is playing and the audio track is available.
+- Works best on Chrome and Edge with audio-enabled tabs.
 
-- Recording music from streaming services
-- Capturing podcast audio
-- Saving audio from video calls or meetings
-- Recording system sounds and notifications
-- Creating audio samples from web content
+---
 
-## 🛠️ Customization
+## License
 
-You can modify the recording settings in `script.js`:
-
-```javascript
-// Adjust audio quality
-audioBitsPerSecond: 192000  // Change bitrate
-sampleRate: 48000          // Change sample rate
-
-// Modify file naming
-a.download = 'recording.webm';  // Change filename
-```
-
-## 📱 Browser Support
-
-| Browser | Support |
-|---------|---------|
-| Chrome  | ✅ Full |
-| Firefox | ✅ Full |
-| Safari  | ✅ Full |
-| Edge    | ✅ Full |
-
-## 🔒 Privacy
-
-EchoCap runs entirely in your browser - no data is sent to external servers. All recordings are processed locally and downloaded directly to your device.
-
-## 📄 License
-
-This project is open source. Feel free to modify and distribute as needed.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-![EchoCap Interface](screenshots/main-interface.png)
+This project is open-source and free to use.

@@ -1,100 +1,98 @@
-EchoCap
-📝 Description
-A web application that records high-quality audio from your screen sharing session. This tool is useful for capturing system audio during presentations, tutorials, or any screen recording scenario where you need pristine audio quality.
+# 🎙️ EchoCap
 
-✨ Features
-Records audio at 48kHz sample rate (higher than standard 44.1kHz)
+*Record and Save your favourite tracks*
 
-Uses Opus codec with 192kbps bitrate for excellent quality
+EchoCap is a simple, browser-based audio recording application that captures system audio from your screen. Perfect for recording music, podcasts, or any audio playing on your computer.
 
-Simple one-click recording and saving
+## ✨ Features
 
-Lightweight and runs entirely in the browser
+- **System Audio Recording**: Captures audio from your screen/display
+- **High Quality**: Records at 48kHz sample rate with 192kbps bitrate
+- **Instant Download**: Automatically downloads recordings as WebM files
+- **Clean Interface**: Simple, user-friendly design
+- **Browser-Based**: No installation required - runs directly in your web browser
 
-No server required - all processing happens locally
+## 🚀 Getting Started
 
-🛠️ Technologies Used
-HTML5
+### Prerequisites
 
-CSS3
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Microphone/audio permissions
 
-JavaScript (ES6+)
+### Installation
 
-Web APIs:
+1. Clone or download this repository
+2. Open `index.html` in your web browser
+3. Grant screen sharing permissions when prompted
 
-MediaRecorder API
+### Usage
 
-getDisplayMedia()
+1. Click **"Start Recording"** to begin
+2. Select the screen/application you want to record audio from
+3. The app will capture the audio from your selected source
+4. Click **"Stop Recording"** when finished
+5. Your recording will automatically download as `recording.webm`
 
-Blob API
+## 📁 Project Structure
 
-🚀 How to Use
-Open the application in a modern browser (Chrome, Edge, Firefox recommended)
+```
+echocap/
+├── index.html      # Main HTML file
+├── style.css       # Styling
+├── script.js       # Recording functionality
+└── README.md       # This file
+```
 
-Click "Start Recording"
+## 🔧 Technical Details
 
-Select the screen/window/tab you want to share (make sure to check "Share audio" option)
+- **Audio Format**: WebM with Opus codec
+- **Sample Rate**: 48,000 Hz
+- **Bitrate**: 192 kbps
+- **Audio Processing**: Echo cancellation and noise suppression disabled for pure audio capture
 
-Perform your screen activity with audio
+## 🎯 Use Cases
 
-Click "Stop Recording" when finished
+- Recording music from streaming services
+- Capturing podcast audio
+- Saving audio from video calls or meetings
+- Recording system sounds and notifications
+- Creating audio samples from web content
 
-The audio will automatically download as screen-audio.webm
+## 🛠️ Customization
 
-⚙️ Technical Specifications
-Audio Format: WebM container with Opus codec
+You can modify the recording settings in `script.js`:
 
-Sample Rate: 48,000 Hz
+```javascript
+// Adjust audio quality
+audioBitsPerSecond: 192000  // Change bitrate
+sampleRate: 48000          // Change sample rate
 
-Bitrate: 192 kbps
+// Modify file naming
+a.download = 'recording.webm';  // Change filename
+```
 
-Echo Cancellation: Disabled (for pure audio capture)
+## 📱 Browser Support
 
-Noise Suppression: Disabled (for unprocessed audio)
+| Browser | Support |
+|---------|---------|
+| Chrome  | ✅ Full |
+| Firefox | ✅ Full |
+| Safari  | ✅ Full |
+| Edge    | ✅ Full |
 
-🌟 Why This Recorder?
-Higher Quality: Better than standard browser recording settings
+## 🔒 Privacy
 
-No Middleware: Doesn't require additional software or plugins
+EchoCap runs entirely in your browser - no data is sent to external servers. All recordings are processed locally and downloaded directly to your device.
 
-Privacy Focused: All processing happens in your browser
+## 📄 License
 
-Lightweight: Minimal resource usage
+This project is open source. Feel free to modify and distribute as needed.
 
-📁 File Structure
-text
-screen-audio-recorder/
-├── index.html          # Main application file
-└── README.md           # This documentation
-🧑‍💻 Development
-To modify or extend this project:
+## 🤝 Contributing
 
-Clone or download the repository
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-Open index.html in a code editor
-
-Make your changes
-
-Test in browser
-
-Customization Options:
-Change audio settings in the getDisplayMedia options
-
-Modify the output format by changing the mimeType
-
-Adjust the bitrate via audioBitsPerSecond
-
-Customize the UI in the <style> section
-
-⚠️ Limitations
-Requires browser support for MediaRecorder API
-
-Some browsers may limit audio capture from certain sources
-
-Chrome requires HTTPS for getDisplayMedia() to work
-
-📜 License
-This project is open-source and available for anyone to use or modify.
-
-🙏 Credits
-Developed with the Web Media APIs and modern JavaScript.
+![EchoCap Interface](screenshots/main-interface.png)
